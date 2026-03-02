@@ -11,6 +11,9 @@ new_threshold= 0.5
 print (churn_model.feature_names_in_)
 print (threshold)
 
+@app.get("/Health")
+def health():
+    return {"status": "ok"}
 
 @app.get("/")
 def home():
