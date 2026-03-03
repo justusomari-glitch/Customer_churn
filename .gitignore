@@ -7,3 +7,4 @@ __pycache__/
 venv
 !churn_pipeline.pkl
 !final_threshold.pkl
+.streamlit/secrets.toml

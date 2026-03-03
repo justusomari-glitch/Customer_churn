@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 st.set_page_config(page_title="Customer Churn Prediction", page_icon=":bar_chart:", layout="wide")
-API_URL = "https://customer-churn-1-bako.onrender.com/predict"
+API_URL = st.secrets["API_URL"]
 with st.sidebar:
     st.title("Customer Information")
     tenure_months = st.slider("Tenure Months", min_value=0,value=12)
