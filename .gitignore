@@ -5,3 +5,5 @@ __pycache__/
 *.pyd
 *.csv
 venv
+!churn_pipeline.pkl
+!final_threshold.pkl
