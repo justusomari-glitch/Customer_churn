@@ -24,6 +24,6 @@ jobs:
                 python -m pip install pytest
             
             - name: run tests
-              run: pytest
+              run: pytest -q
                 
             
