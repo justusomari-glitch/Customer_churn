@@ -14,6 +14,24 @@ with st.sidebar:
     last_login_days = st.slider("Days Since Last Login", min_value=0, max_value=365, value=30)
 
     predict_button=st.button("Predict Churn")
+    st.markdown(
+        """
+           <style>
+           .watermark {
+               position: fixed;
+               bottom: 10px;
+               right: 10px;
+               opacity: 0.5;
+               font-size: 12px;
+               color: black;
+           }
+           </style>
+           <div class="watermark">Created by Your Name</div>
+           Omari Kwache's Churn Prediction App
+           </div>
+        """,
+        unsafe_allow_html=True
+    )
 
 st.title("Customer Churn Prediction")
 col1, col2 = st.columns([1, 1])
