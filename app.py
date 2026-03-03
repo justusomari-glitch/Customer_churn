@@ -4,16 +4,13 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 
 app= FastAPI()
-churn_model = joblib.load('churn_pipeline.pkl')    
+churn_model = joblib.load('churn_pipeline.pkl') 
 threshold = joblib.load('final_threshold.pkl')
 new_threshold= 0.5
 
 print (churn_model.feature_names_in_)
 print (threshold)
 
-@app.get("/Health")
-def health():
-    return {"status": "ok"}
 
 @app.get("/")
 def home():
