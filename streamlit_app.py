@@ -5,9 +5,9 @@ API_URL = st.secrets["API_URL"]
 with st.sidebar:
     st.title("Customer Information")
     tenure_months = st.slider("Tenure Months", min_value=0,value=12)
-    payment_method = st.selectbox("Payment Method", ["Electronic check", "Mailed check", "Bank transfer (automatic)", "Credit card (automatic)"])
+    payment_method = st.selectbox("Payment Method", ["Electronic check", "Mailed check", "Bank transfer (automatic)", "Credit card (automatic)","Unknown"])
     contract_type = st.selectbox("Contract Type", ["Month-to-month", "One year", "Two years"])
-    internet_service = st.selectbox("Internet Service", ["DSL", "Fiber optic", "No"])
+    internet_service = st.selectbox("Internet Service", ["DSL", "Fiber optic", "None","Unknown"])
     promo_discount_pct = st.slider("Promo Discount Percentage", min_value=0.0, max_value=100.0, value=10.0)
     monthly_charges = st.number_input("Monthly Charges", min_value=0.0, value=70.0)
     support_tickets_3m = st.number_input("Support Tickets in Last 3 Months", min_value=0, value=1)
