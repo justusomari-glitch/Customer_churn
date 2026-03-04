@@ -23,7 +23,7 @@ with st.sidebar:
                right: 10px;
                opacity: 0.5;
                font-size: 12px;
-               color: black;
+               color: Blue;
            }
            </style>
            <div class="watermark">Created by Your Name</div>
